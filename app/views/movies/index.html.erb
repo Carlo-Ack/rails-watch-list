@@ -1,0 +1,10 @@
+<h1> Ello! </h1>
+
+<ul>
+  <% @movie.each do |movie| %>
+    <li><%= link_to movie.title %></li>
+    <li><%= movie.overview %></li>
+    <li><%= movie.poster_url %></li>
+    <li><%= movie.rating %></li>
+  <% end %>
+</ul>

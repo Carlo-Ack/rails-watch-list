@@ -7,3 +7,19 @@
 #   ["Action", "Comedy", "Drama", "Horror"].each do |genre_name|
 #     MovieGenre.find_or_create_by!(name: genre_name)
 #   end
+
+puts "Cleaning database..."
+Movie.destroy_all
+# 2. Create the instances 🏗️
+puts "Creating Movies..."
+Movie.create!(title: "Dishoom", overview: "7 Boundary St, London E2 7JE", poster_url: "12345", rating: 1.2)
+puts "Created Dishoom"
+Movie.create!(title: "chicken", overview: "Nice", poster_url: "12345", rating: 1.2)
+puts "Created Dishoom"
+Movie.create!(title: "cat", overview: "not nice", poster_url: "12345", rating: 1.2)
+puts "Created Dishoom"
+# 3. Display a message 🎉
+puts "Finished! Created #{Movie.count} restaurants."
+
+List.create!(name: "Ha-Ha")
+# Bookmark.create!(comment: "I have no clue what I am doing!")
