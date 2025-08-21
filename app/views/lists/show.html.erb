@@ -1,5 +1,17 @@
 <h2><%= @list.name %></h2>
+
 <ul>
-  <%= @list.bookmarks.each do |bookmark| %>
-  <li><%= bookmark.comment%></li>
+  <% @list.movies.each do |movie| %>
+    <li><%= movie.title %></li>
+    <li><%= movie.overview %></li>
+    <img src="<%= movie.poster_url %>" alt="">
+  <% end %>
+</ul>
+
+<ul>
+  <% @list.bookmarks.each do |bookmark| %>
+    <li><%= bookmark.comment %></li>
+    <li><%= bookmark.list_id %></li>
+    <li><%= bookmark.movie_id %></li>
+  <% end %>
 </ul>
