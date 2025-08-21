@@ -21,5 +21,7 @@ puts "Created Dishoom"
 # 3. Display a message 🎉
 puts "Finished! Created #{Movie.count} restaurants."
 
+List.destroy_all
 List.create!(name: "Ha-Ha")
+# # Bookmark.destroy_all
 # Bookmark.create!(comment: "I have no clue what I am doing!")
