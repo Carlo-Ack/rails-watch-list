@@ -1,14 +1,24 @@
-<h2><%= @list.name %></h2>
+<h2 id="header"><%= @list.name %></h2>
 
-<ul class="row my-2">
+<div class="card-container">
+
+  <div class="card-content">
   <% @list.movies.each do |movie| %>
   <% bookmark = Bookmark.find_by(list: @list, movie: movie) %>
-    <li><%= movie.title %></li>
-    <li><%= movie.overview %></li>
+    <%= movie.title %>
+    <%= movie.overview %>
     <img src="<%= movie.poster_url %>" alt="">
+
+    <div class="bookmarks">
     <%= bookmark.comment %>
+    </div>
+
   <% end %>
-</ul>
+
+  </div>
+
+
+</div>
 
 <%# <ul class="row my-2"> %>
   <%# <% @list.bookmarks.each do |bookmark| %>

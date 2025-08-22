@@ -1,0 +1,45 @@
+#header {
+  text-decoration: solid;
+  background-color: grey;
+  color: $blue;
+}
+
+.card-container {
+
+  background-color: rgb(158, 158, 158);
+
+}
+
+.card-content {
+  background-size: cover;
+  background-position: center;
+  background-color: $gray;
+  height: 180px;
+  width: 100 px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: rgb(24, 23, 23);
+  font-size: 24px;
+  font-weight: bold;
+  text-shadow: 1px 1px 3px rgba(0,0,0,0.2);
+  box-shadow: 0 0 15px rgba(0,0,0,0.2);
+  margin: 20px;
+  padding: 20px;
+}
+
+body {
+  font-family: Arial;
+  background-color: rgb(223, 218, 218);
+  /* width: 700px; */
+  color: 4300FF;
+  text-align: center;
+  padding: 50px;
+}
+
+.bookmarks {
+  margin: 20px;
+  padding: 20px;
+  height: 40px;
+  width: 40 px;
+}
