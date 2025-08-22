@@ -5,8 +5,8 @@
 <%# <% end %>
 
 <%= simple_form_for @list do |f| %>
-  <%= f.input :name %>
-  <%= f.button :submit %>
+  <%= f.input :name, placeholder: 'Drama' %>
+  <%= f.submit class: 'btn btn-flat' %>
 <% end %>
 
 <%# <%= simple_form_for @bookmark do |f| %>
